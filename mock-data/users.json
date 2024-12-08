@@ -1,0 +1,93 @@
+[
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b91",
+        "first": "Dale",
+        "last": "Goodwin",
+        "position": "DevOps Engineer",
+        "isActive": true,
+        "manager": "63d2e0f6e8c79a6f3f1e1b98"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b92",
+        "first": "Alice",
+        "last": "Peters",
+        "position": "Data Analyst",
+        "isActive": true,
+        "manager": "63d2e0f6e8c79a6f3f1e1b99"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b93",
+        "first": "Darren",
+        "last": "Cross",
+        "position": "Web Developer",
+        "isActive": false,
+        "manager": "63d2e0f6e8c79a6f3f1e1b9a"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b94",
+        "first": "Edgar",
+        "last": "Carlson",
+        "position": "Systems Engineer",
+        "isActive": true,
+        "manager": "63d2e0f6e8c79a6f3f1e1b9b"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b95",
+        "first": "Keira",
+        "last": "Owens",
+        "position": "Data Scientist",
+        "isActive": false,
+        "manager": "63d2e0f6e8c79a6f3f1e1b9c"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b96",
+        "first": "Brian",
+        "last": "Johnson",
+        "position": "DevOps Engineer",
+        "isActive": true,
+        "manager": "63d2e0f6e8c79a6f3f1e1b98"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b97",
+        "first": "Howard",
+        "last": "Schneider",
+        "position": "Web Developer",
+        "isActive": true,
+        "manager": "63d2e0f6e8c79a6f3f1e1b99"
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b98",
+        "first": "Corey",
+        "last": "Schultz",
+        "position": "Manager",
+        "isActive": true
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b99",
+        "first": "Kathryn",
+        "last": "Jacobsen",
+        "position": "Manager",
+        "isActive": true
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b9a",
+        "first": "Lydia",
+        "last": "Bower",
+        "position": "Manager",
+        "isActive": true
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b9b",
+        "first": "Leroy",
+        "last": "Davis",
+        "position": "Manager",
+        "isActive": true
+    },
+    {
+        "_id": "63d2e0f6e8c79a6f3f1e1b9c",
+        "first": "Marcus",
+        "last": "Spearman",
+        "position": "Manager",
+        "isActive": true
+    }
+]
