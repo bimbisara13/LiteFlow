@@ -147,7 +147,7 @@ export default {
         },
 
         async deleteTask(id) {
-            const res = await fetch(`http://localhost:8888/tasks/${id}`, {
+            const res = await fetch(`http://localhost:8080/tasks/${id}`, {
                 method: 'DELETE',
                 mode: 'cors'
             });
@@ -160,7 +160,7 @@ export default {
             this.populated_project = project;
             this.populated_project.managerName = this.populated_project.manager.first + " " + this.populated_project.manager.last;
 
-            const usersRes = await fetch(`http://localhost:8888/users/?project=${project.id}`);
+            const usersRes = await fetch(`http://localhost:8080/users/?project=${project.id}`);
             const users = await usersRes.json();
 
             this.available_users = users.map(user => {
@@ -177,7 +177,7 @@ export default {
         },
 
         async refresh() {
-            const res = await fetch(`http://localhost:8888/projects/${this.populated_project._id}`);
+            const res = await fetch(`http://localhost:8080/projects/${this.populated_project._id}`);
             const project = await res.json();
 
             this.populated_project = project;
@@ -185,7 +185,7 @@ export default {
         },
     },
     async beforeRouteEnter(to, from, next) {
-        const projectRes = await fetch(`http://localhost:8888/projects/${to.params.id}`);
+        const projectRes = await fetch(`http://localhost:8080/projects/${to.params.id}`);
         const project = await projectRes.json();
 
         next(function (vm) {

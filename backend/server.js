@@ -10,7 +10,7 @@ const { username, password, dbName } = require('./config.json');
 // call the express fn which creates the express application
 // this allows us to use the full functionality for our express server
 const app = express();
-const port = 8888;
+const port = 8080;
 
 // require in our route resources
 const projects = require('./api/routes/projects');
@@ -32,7 +32,7 @@ app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
 
-const URL = `mongodb+srv://${username}:${password}@liteflow.ugjcr.mongodb.net/${dbName}retryWrites=true&w=majority&appName=LiteFlow`;
+const URL = `mongodb+srv://${username}:${password}@liteflow.ugjcr.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 mongoose.set('strictQuery', false);
 
 mongoose

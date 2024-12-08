@@ -5,6 +5,7 @@ const getUsers = async (req, res) => {
 
     try {
         const users = await UserService.getAllUsers(query);
+        console.log(users);
         res.json(users);
     } catch (error) {
         res.status(500).send({ error: error.toString() });

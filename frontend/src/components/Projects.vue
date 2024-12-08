@@ -47,7 +47,7 @@ export default {
     async openProjectModal(project) {
       this.showModal = true;
 
-      const usersRes = await fetch(`http://localhost:8888/users/?project=${project.id}`);
+      const usersRes = await fetch(`http://localhost:8080/users/?project=${project.id}`);
       const users = await usersRes.json();
 
       this.available_users = users.map(user => {
@@ -64,7 +64,7 @@ export default {
     },
 
     async refresh() {
-      const res = await fetch(`http://localhost:8888/projects`);
+      const res = await fetch(`http://localhost:8080/projects`);
       const body = await res.json();
 
       this.projects = body;

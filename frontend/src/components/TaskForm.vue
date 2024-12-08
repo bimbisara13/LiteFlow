@@ -94,7 +94,7 @@ export default {
                 project: pID,
             };
 
-            const res = await fetch(`http://localhost:8888/tasks`, {
+            const res = await fetch(`http://localhost:8080/tasks`, {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
@@ -123,7 +123,7 @@ export default {
                 }
             };
 
-            const res = await fetch(`http://localhost:8888/tasks/${this.task._id}`, {
+            const res = await fetch(`http://localhost:8080/tasks/${this.task._id}`, {
                 method: 'PUT',
                 mode: 'cors',
                 headers: {

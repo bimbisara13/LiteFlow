@@ -50,7 +50,7 @@ export default {
                 repository: this.project.repository,
             };
 
-            const res = await fetch(`http://localhost:8888/projects/${this.project._id}`, {
+            const res = await fetch(`http://localhost:8080/projects/${this.project._id}`, {
                 method: 'PUT',
                 mode: 'cors',
                 headers: {
